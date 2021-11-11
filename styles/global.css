@@ -115,6 +115,32 @@ body {
     border-bottom: 0.5px solid #020202ff;
 }
 
+.lb-img {
+    box-shadow: 2px 2px 2px 1px rgba(206, 162, 172, 0.2);
+    border: 0.5px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.button-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+.button-link:hover {
+    color: #020202ff;
+}
+
+.btn-primary {
+    background-color: #774c60ff;
+    border: 0px;
+}
+
+.btn-primary:hover {
+    background-color: #cea2acff;
+}
+
 /* back to top button */
 #toTop {
     display: none; /* Hidden by default */

@@ -105,6 +105,16 @@ body {
     padding-left: 10px
 }
 
+.body-link {
+    color:#774c60ff;
+    text-decoration: none;
+}
+
+.body-link:hover {
+    color: #cda14bff;
+    border-bottom: 0.5px solid #020202ff;
+}
+
 /* back to top button */
 #toTop {
     display: none; /* Hidden by default */

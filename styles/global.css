@@ -76,6 +76,11 @@ body {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
 } */
+
+nav {
+    border-bottom: 0.5px solid rgba(119, 76, 96, 0.2) 
+}
+
 .nav-link {
     color:#020202ff;
 }
@@ -84,7 +89,7 @@ body {
     border-bottom: 0.5px solid #020202ff;
 }
 .navbar-brand {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
 .navbar-brand:hover {
     color:#774c60ff;
@@ -105,14 +110,25 @@ body {
     padding-left: 10px
 }
 
+hr {
+    color: #774c60ff;
+}
+
+.headshot {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+}
+
 .body-link {
     color:#774c60ff;
     text-decoration: none;
+    font-style: italic;
 }
 
 .body-link:hover {
     color: #cda14bff;
-    border-bottom: 0.5px solid #020202ff;
+    /* border-bottom: 0.5px solid #020202ff; */
 }
 
 .lb-img {
@@ -141,6 +157,13 @@ body {
     background-color: #cea2acff;
 }
 
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #cda14bff;
+    border: none;
+    box-shadow: none;
+}
+
 /* back to top button */
 #toTop {
     display: none; /* Hidden by default */
@@ -151,6 +174,7 @@ body {
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: #020202ff; /* Set a background color */
+    opacity: 85%;
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 5px; /* Some padding */
@@ -166,5 +190,15 @@ body {
 @media only screen and (max-width: 425px) {
     .header-main {
         font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 769px) {
+    .header-main {
+        font-size: 5rem;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .headshot {
+        width: 50%;
     }
 }

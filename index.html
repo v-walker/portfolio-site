@@ -26,7 +26,8 @@
     <div class="container-fluid p-0 m-0">
         <nav class="navbar navbar-expand-lg bg-white m-0 sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand text-rich-black font-playfair-bold1" href="/">• VW •</a>
+                <a class="navbar-brand text-rich-black font-playfair-reg" href="/"><span
+                >·</span> <span class="initials font-playfair-bold1">VW</span> <span>·</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="nav-toggle-icon"><i class="fas fa-bars"></i></span>
                 </button>
@@ -73,6 +74,7 @@
                     Creative Thinker... |
                     Problem Solver... |
                     Software Developer... |
+                    Lifelong Learner... |
                     Dog Mom...
                 </div>                
             </div>
@@ -85,18 +87,27 @@
 
             <article class="m-5 row">
                 <h2 id="about" class="font-playfair-semibold">About</h2>
-                <hr class="">
-                <p>
-                    I graduated from the University of Georgia (UGA) with my B.S.Ed. in Communication Sciences and Disorders (CMSD) in 2014 and my M.Ed. in CMSD in 2016. With a keen interest in child language development, I found a love of working with children with autism spectrum disorder (ASD) as a speech-language pathologist (SLP) in the public school setting. Working with this population involves unique challenges with regards to not only supporting language development, but also social communication, as well as social-emotional skills. I found this field incredibly rewarding, but in light of the COVID-19 pandemic and a move to remote learning, I realized an interest in technology and the web. More specifically, I thought of all the technologies I wish I knew how to create to better support my students.
-                </p>
+                <hr>
+                <div class="col-12 col-lg-8">
+                    <p>
+                        Hello, and welcome! Thanks for stopping by. Let's start with a little about my background and transition to software development.
+                    </p>
+                    <p>
+                        I graduated from the University of Georgia (UGA) with my B.S.Ed. in Communication Sciences and Disorders (CMSD) in 2014 and my M.Ed. in CMSD in 2016. With a keen interest in child language development, I found a love of working with children with autism spectrum disorder (ASD) as a speech-language pathologist (SLP) in the public school setting. Working with this population involves unique challenges with regards to not only supporting language development, but also social communication, as well as social-emotional skills. I found this field incredibly rewarding, but in light of the COVID-19 pandemic and a move to remote learning, I realized an interest in technology and all of the resources web applications can offer to support education. More specifically, I thought of all the technologies I wish I knew how to create to better support my students.
+                    </p>
 
-                <p>
-                    Enter learning web development! In my youth, I enjoyed dabbling in HTML and CSS to build small sites via online games and MySpace (remember Myspace?!?), so I knew I would find this field interesting, exciting, and challenging! I am currently furthering my studies via an Immersive Full-stack Web Development bootcamp with <b><a href="digitalcrafts.com" class="body-link" target="_blank">DigitalCrafts</a></b> (expected graduation date: January 2022).
-                </p>
+                    <p>
+                        Enter learning web development! In my youth, I enjoyed dabbling in HTML and CSS to build small sites via online games and MySpace (remember Myspace?!?), so I knew I would find this field interesting, exciting, and challenging! I am currently furthering my studies via an Immersive Full-stack Web Development bootcamp with <b><a href="digitalcrafts.com" class="body-link" target="_blank">DigitalCrafts</a></b> (expected graduation date: January 2022). I find myself regularly celebrating the little wins whenever I take on a new skill, solve a particularly difficult puzzle, or find that pesky bug that has been plaguing my code. I strive to see every new development challenge as an opportunity to continue growing and learning.
+                    </p>
 
-                <p>
-                    I hope to make the world a better place through the use of technology. Here's to learning, new experiences, and all the challenges that lie ahead!
-                </p>
+                    <p>
+                        I hope to make the world a better place through the use of technology. Here's to learning, new experiences, and all the challenges that lie ahead!
+                    </p>
+                </div>
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                    <img class="headshot" src="images/headshot.jpeg" alt="">
+                </div>
+                    
                     
             </article>
 
@@ -161,9 +172,56 @@
                 </p>
             </article>
 
+            <article class="m-5 row">
+                <h2 id="resume" class="font-playfair-semibold col-12 col-md-6">Resume & Contact</h2>
+                <!-- <h2 id="resume" class="font-playfair-semibold col-12 col-md-6">Contact</h2> -->
+                <hr>
+                <div class="container row text-center">
+                    <!-- holds resume -->
+                    <div class="col-12 col-lg-5 row d-flex justify-content-center m-0 p-0">
+                        <a class="col-12 mb-3" href="images/resume_snapshot.png" data-lightbox="resume" data-title="Resume"><img src="images/resume_snapshot_thumb.png" alt="image of resume" class="lb-img"></a>
+                        <button class="text-center btn btn-primary col-6 col-md-5 col-xl-3">
+                            <a href="images/vWalkerResume.pdf" target="_blank" class="button-link">Download Resume</a>
+                        </button>
+                    </div>
+                    <!-- holds contact form -->
+                    <div class="col-12 col-lg-7 row">
+
+                        <form class="container" action="php/process-form.php" method="POST">
+                            <h3 class="font-playfair-reg text-center mt-5 mt-lg-0" id="contact">Get in Touch!</h3>
+                            <div class="mb-3 text-start">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" name="name" class="form-control" placeholder="Your name here" required>
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" name="email" class="form-control" placeholder="youremail@website.com" required>
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" placeholder="Your message here..." rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary me-auto text-wrap col-6 col-md-4 col-lg-3 col-xl-1">
+                                <span class="button-link">Send
+                                <i class="fa fa-send"></i> </span>
+                            </button>
+                        </form>
+                    </div>
+                    
+                </div>
+                
+                <p>
+                    
+                </p>
+            </article>
+
             <!-- Resume Section -->
 
-            <article class="m-5 row">
+            <!-- <article class="m-5 row">
                 <h2 id="resume" class="font-playfair-semibold">Resume</h2>
                 <hr>
                 <div class="container row text-center d-flex justify-content-center">
@@ -176,17 +234,17 @@
                 <p>
                     
                 </p>
-            </article>
+            </article> -->
 
             <!-- Contact Section -->
 
-            <article class="m-5 row">
+            <!-- <article class="m-5 row">
                 <h2 id="contact" class="font-playfair-semibold">Contact</h2>
                 <hr>
                 <p>
                     
                 </p>
-            </article>
+            </article> -->
 
         </main>
 
@@ -201,7 +259,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Lightbox -->
     <script src="scripts/lightbox.js"></script>
-    <!-- <script src="jquery.min.js"></script> -->
     <script src="scripts/jquery.animateTyping.js"></script>
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/b5578a43de.js" crossorigin="anonymous"></script>

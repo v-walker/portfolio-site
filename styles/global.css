@@ -9,6 +9,7 @@ body {
     animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    font-family: Helvetica, sans-serif;
 }
 
 @keyframes fadeInAnimation {
@@ -116,7 +117,7 @@ hr {
 
 .headshot {
     width: 90%;
-    height: auto;
+    max-height: 90%;
     border-radius: 5px;
 }
 
@@ -199,6 +200,8 @@ hr {
 }
 @media only screen and (min-width: 1400px) {
     .headshot {
-        width: 50%;
+        width: 60%;
+        /* height: auto; */
+        max-height: 90%
     }
 }

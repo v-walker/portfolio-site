@@ -281,15 +281,15 @@
                     <!-- holds contact form -->
                     <div class="col-12 col-lg-8 row ms-2 p-0">
 
-                        <form class="container">
+                        <form class="container" id="contactForm">
                             <h3 class="font-playfair-reg text-center mt-5 mt-lg-0 mb-5" id="contact">Get in Touch!</h3>
                             <div class="mb-3 text-start">
                                 <label for="name" class="form-label">Name</label>
-                                <input type="text" id="name" name="name" class="form-control" placeholder="Your name here" required>
+                                <input type="text" id="name" name="from_name" class="form-control" placeholder="Your name here" required>
                             </div>
                             <div class="mb-3 text-start">
                                 <label for="email" class="form-label">Email address</label>
-                                <input type="email" id="email" name="email" class="form-control" placeholder="youremail@website.com" required>
+                                <input type="email" id="email" name="from_email" class="form-control" placeholder="youremail@website.com" required>
                             </div>
                             <div class="mb-3 text-start">
                                 <label for="subject" class="form-label">Subject</label>
@@ -297,13 +297,14 @@
                             </div>
                             <div class="mb-3 text-start">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea id="message" class="form-control" placeholder="Your message here..." rows="3" required></textarea>
+                                <textarea id="message" class="form-control" name="message" placeholder="Your message here..." rows="3" required></textarea>
                             </div>
-                            <button type="button" onclick="sendmail()" class="btn btn-primary text-wrap col-6 col-md-4 col-lg-3">
+                            <button type="submit" class="btn btn-primary text-wrap col-6 col-md-4 col-lg-3">
                                 <span class="button-link">Send Message
                                 <i class="fa fa-send"></i> </span>
                             </button>
                         </form>
+
                     </div>
                     
                 </div>
@@ -312,33 +313,6 @@
                     
                 </p>
             </article>
-
-            <!-- Resume Section -->
-
-            <!-- <article class="m-5 row">
-                <h2 id="resume" class="font-playfair-semibold">Resume</h2>
-                <hr>
-                <div class="container row text-center d-flex justify-content-center">
-                    <a class="col-12 mb-3" href="images/resume_snapshot.png" data-lightbox="resume" data-title="Resume"><img src="images/resume_snapshot_thumb.png" alt="image of resume" class="lb-img"></a>
-                    <button class="btn btn-primary col-6 col-md-3 col-lg-2 col-xl-1">
-                        <a href="images/vWalkerResume.pdf" target="_blank" class="button-link">Download Resume</a>
-                    </button>
-                </div>
-                
-                <p>
-                    
-                </p>
-            </article> -->
-
-            <!-- Contact Section -->
-
-            <!-- <article class="m-5 row">
-                <h2 id="contact" class="font-playfair-semibold">Contact</h2>
-                <hr>
-                <p>
-                    
-                </p>
-            </article> -->
 
         </main>
 
@@ -368,21 +342,21 @@
             emailjs.init("user_XeQ18l49Bu13T6bagL5uX");
         })();
     
-        function sendmail() {
-            let name = document.getElementById("name").value;
-            let userEmail = document.getElementById("email").value;
-            let subject = document.getElementById("subject").value;
-            let userMessage = document.getElementById("message").value;
+        
+        document.getElementById('contactForm')
+        .addEventListener('submit', function(e) {
+        e.preventDefault();
 
-                let contactParams = {
-                    from_name: name,
-                    from_email: email,
-                    subject: subject,
-                    message: userMessage
-                }
+        const serviceID = 'service_6vmw8s2';
+        const templateID = 'template_tp6c8ro';
 
-                emailjs.send('service_6vmw8s2', 'template_tp6c8ro', contactParams).then(function (res) {})
-        }
+        emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            alert('Sent!');
+        }, (err) => {
+            alert(JSON.stringify(err));
+            });
+        });
     </script>
     
 </body>

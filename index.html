@@ -281,25 +281,25 @@
                     <!-- holds contact form -->
                     <div class="col-12 col-lg-8 row ms-2 p-0">
 
-                        <form class="container" action="php/process-form.php" method="POST">
+                        <form class="container">
                             <h3 class="font-playfair-reg text-center mt-5 mt-lg-0 mb-5" id="contact">Get in Touch!</h3>
                             <div class="mb-3 text-start">
                                 <label for="name" class="form-label">Name</label>
-                                <input type="text" name="name" class="form-control" placeholder="Your name here" required>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Your name here" required>
                             </div>
                             <div class="mb-3 text-start">
                                 <label for="email" class="form-label">Email address</label>
-                                <input type="email" name="email" class="form-control" placeholder="youremail@website.com" required>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="youremail@website.com" required>
                             </div>
                             <div class="mb-3 text-start">
                                 <label for="subject" class="form-label">Subject</label>
-                                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
                             </div>
                             <div class="mb-3 text-start">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" placeholder="Your message here..." rows="3" required></textarea>
+                                <textarea id="message" class="form-control" placeholder="Your message here..." rows="3" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary text-wrap col-6 col-md-4 col-lg-3">
+                            <button type="button" onclick="sendmail()" class="btn btn-primary text-wrap col-6 col-md-4 col-lg-3">
                                 <span class="button-link">Send Message
                                 <i class="fa fa-send"></i> </span>
                             </button>
@@ -361,6 +361,29 @@
     <script src="https://kit.fontawesome.com/b5578a43de.js" crossorigin="anonymous"></script>
     <!-- Custom Scripts -->
     <script src="scripts/topButton.js"></script>
+    <!-- Email client -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_XeQ18l49Bu13T6bagL5uX");
+        })();
+    
+        function sendmail() {
+            let name = document.getElementById("name").value;
+            let userEmail = document.getElementById("email").value;
+            let subject = document.getElementById("subject").value;
+            let userMessage = document.getElementById("message").value;
+
+                let contactParams = {
+                    from_name: name,
+                    from_email: email,
+                    subject: subject,
+                    message: userMessage
+                }
+
+                emailjs.send('service_6vmw8s2', 'template_tp6c8ro', contactParams).then(function (res) {})
+        }
+    </script>
     
 </body>
 </html>

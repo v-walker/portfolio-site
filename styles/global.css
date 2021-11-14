@@ -117,6 +117,7 @@ hr {
 
 .headshot {
     width: 90%;
+    height: auto;
     max-height: 90%;
     border-radius: 5px;
 }
@@ -146,7 +147,7 @@ hr {
 }
 
 .button-link:hover {
-    color: #020202ff;
+    color: rgb(37, 37, 37);
 }
 
 .btn:focus, .btn:active:focus, .btn.active:focus {
@@ -167,29 +168,22 @@ hr {
     background-color: #cda14bff;
 }
 
-/* .btn:active,
-.btn:focus {
-    border: none;
-    box-shadow: none;
-    outline: none
-} */
-
 /* back to top button */
 #toTop {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #020202ff; /* Set a background color */
-    opacity: 85%;
-    color: white; /* Text color */
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #020202ff;
+    opacity: 80%;
+    color: white;
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 5px; /* Some padding */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 30px; /* Increase font size */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -209,8 +203,8 @@ hr {
 }
 @media only screen and (min-width: 1400px) {
     .headshot {
-        width: 60%;
+        max-width: 60%;
         /* height: auto; */
-        max-height: 90%
+        /* max-height: 90% */
     }
 }

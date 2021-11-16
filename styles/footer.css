@@ -4,5 +4,7 @@ footer {
     font-size: 0.9rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    padding-left: 0px;
+    padding-right: 0px;
     border-top: 0.5px solid rgba(119, 76, 96, 0.2) 
 }

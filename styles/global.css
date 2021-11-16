@@ -138,6 +138,7 @@ hr {
     box-shadow: 2px 2px 2px 1px rgba(206, 162, 172, 0.2);
     border: 0.5px solid whitesmoke;
     border-radius: 5px;
+    width: 80%;
 }
 
 .button-link {
@@ -202,10 +203,19 @@ hr {
         font-size: 5rem;
     }
 }
+
+@media only screen and (min-width: 767px) {
+    .lb-img {
+        max-width: 300px
+    }
+}
+
 @media only screen and (min-width: 1400px) {
     .headshot {
         max-width: 60%;
         /* height: auto; */
         /* max-height: 90% */
     }
+
+    
 }

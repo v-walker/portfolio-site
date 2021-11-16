@@ -130,7 +130,6 @@ hr {
 
 .body-link:hover {
     color: #cda14bff;
-    /* border-bottom: 0.5px solid #020202ff; */
 }
 
 .lb-img {
@@ -201,10 +200,6 @@ hr {
     }
 }
 @media only screen and (max-width: 769px) {
-    /* .h5 {
-        font-size: 1rem;
-    } */
-    
     .header-main {
         font-size: 5rem;
     }
@@ -214,13 +209,20 @@ hr {
     .lb-img {
         max-width: 300px
     }
+    .h5 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    .h5 {
+        font-size: 1.2rem;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
     .headshot {
         max-width: 60%;
-        /* height: auto; */
-        /* max-height: 90% */
     }
 
     

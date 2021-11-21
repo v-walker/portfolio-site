@@ -209,14 +209,25 @@ hr {
     .lb-img {
         max-width: 300px
     }
+
     .h5 {
         font-size: 1rem;
     }
+
+    .headshot {
+        max-height: 400px;
+        max-width: 275px;
+    }
+
 }
 
 @media only screen and (min-width: 1023px) {
     .h5 {
         font-size: 1.2rem;
+    }
+
+    .headshot {
+        max-height: 350px;
     }
 }
 

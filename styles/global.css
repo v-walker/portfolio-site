@@ -221,6 +221,9 @@ hr {
     .blockquote {
         font-size: 1.7rem;
     }
+    .lead {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (min-width: 767px) {
@@ -235,6 +238,10 @@ hr {
     .headshot {
         max-height: 400px;
         max-width: 275px;
+    }
+
+    .lead {
+        font-size: 1.1rem;
     }
 
 }
@@ -252,12 +259,16 @@ hr {
     }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
     .headshot {
         max-height: 350px;
     }
     .blockquote {
         font-size: 2.5rem;
+    }
+
+    .lead {
+        font-size: 1.2rem;
     }
 
     

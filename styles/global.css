@@ -142,7 +142,7 @@ hr {
     width: 80%;
 }
 
-.button-link, .badge-link {
+.button-link, .badge-link, .badge-link-special {
     color: white;
     text-decoration: none;
     font-family: 'Playfair Display', serif;
@@ -154,6 +154,9 @@ hr {
 }
 .badge-link:hover {
     color: #cea2acff;
+}
+.badge-link-special:hover {
+    color: rgb(235, 186, 89);
 }
 
 .btn:focus, .btn:active:focus, .btn.active:focus {

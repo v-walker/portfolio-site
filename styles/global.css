@@ -77,6 +77,9 @@ body {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
 } */
+.font-poiret {
+    font-family: 'Poiret One', cursive;
+}
 
 nav {
     border-bottom: 0.5px solid rgba(119, 76, 96, 0.2) 
@@ -201,10 +204,16 @@ hr {
     .meme {
         max-width: 100%;
     }
+    .blockquote {
+        font-size: 1.3rem;
+    }
 }
 @media only screen and (max-width: 769px) {
     .header-main {
         font-size: 5rem;
+    }
+    .blockquote {
+        font-size: 1.7rem;
     }
 }
 
@@ -232,11 +241,17 @@ hr {
     .headshot {
         max-height: 350px;
     }
+    .blockquote {
+        font-size: 2.0rem;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
     .headshot {
         max-height: 350px;
+    }
+    .blockquote {
+        font-size: 2.5rem;
     }
 
     

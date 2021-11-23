@@ -80,6 +80,9 @@ body {
 .font-poiret {
     font-family: 'Poiret One', cursive;
 }
+.font-courier {
+    font-family: 'Courier Prime', monospace;
+}
 
 nav {
     border-bottom: 0.5px solid rgba(119, 76, 96, 0.2) 
@@ -270,6 +273,4 @@ hr {
     .lead {
         font-size: 1.2rem;
     }
-
-    
 }

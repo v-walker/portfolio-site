@@ -80,8 +80,9 @@ body {
 .font-poiret {
     font-family: 'Poiret One', cursive;
 }
-.font-courier {
-    font-family: 'Courier Prime', monospace;
+
+.font-code {
+    font-family: 'Source Code Pro', monospace;
 }
 
 nav {

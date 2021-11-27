@@ -139,6 +139,17 @@ hr {
     color: #cda14bff;
 }
 
+.footer-link {
+    color:#774c60ff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.footer-link:hover {
+    color:#cda14bff;
+    border-bottom: 0.5px solid #020202ff;
+}
+
 .lb-img {
     box-shadow: 2px 2px 2px 1px rgba(206, 162, 172, 0.2);
     border: 0.5px solid whitesmoke;

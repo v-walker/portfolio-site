@@ -40,3 +40,4 @@ Victoria Walker:
 - https://github.com/v-walker
 - Layout/Design
 - Development
+- Deployment
